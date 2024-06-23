@@ -3,5 +3,5 @@
   "extends": [
     "config:recommended"
   ],
-  "fork": true
+  "forkProcessing": true
 }
