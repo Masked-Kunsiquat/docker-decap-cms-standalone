@@ -1,7 +1,7 @@
 #
 # Prebuild Stage
 #
-FROM node:18-alpine AS prebuild
+FROM node:22-alpine AS prebuild
 
 # Package versions
 ARG DECAP_CMS_VER=3.0.9
@@ -35,7 +35,7 @@ RUN cd /builder/netlify-cms-github-oauth-provider && \
 #
 # Main stage
 #
-FROM node:18-alpine AS main
+FROM node:22-alpine AS main
 
 # Environment vars
 ENV LOGLEVEL=info
