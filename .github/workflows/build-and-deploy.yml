@@ -28,7 +28,7 @@ jobs:
 
       - name: Extract metadata (tags, labels) for Docker
         id: meta
-        uses: docker/metadata-action@v5
+        uses: docker/metadata-action@v6
         # Using 'Semver' format: https://github.com/docker/metadata-action#semver
         with:
           images: |
